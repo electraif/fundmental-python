@@ -30,16 +30,18 @@ data_dari_gojek = {
     'driver_list' : [{'nama' : 'eko', 'jarak' : 10},
                      {'nama' : 'telo', 'jarak' :  100 },
                      {'nama' : 'paijo', 'jarak' : 30},
-                     {'nama' : 'sukirno', 'jarak' : 1000}]
+                     {'nama' : 'sukirno', 'jarak' : 1000}],
+    'driver_name' : [{'nama' : 'eko'}, {'nama' : 'telo'}, {'nama' : 'paijo'}, {'nama' : 'sukirno'}]
 }
 print(data_dari_gojek)
 print(f"\n driver disekitar sini {data_dari_gojek['driver_list']}")
 print(f"driver 1. {data_dari_gojek['driver_list'][0]}")
 print(f"driver 3. {data_dari_gojek['driver_list'][2]}")
 
-print(f"\n driver terdekat 1. {data_dari_gojek['driver_list'][0]['jarak']} meter ")
-print(f" driver terdekat 2. {data_dari_gojek['driver_list'][2]['jarak']} meter ")
-print(f" driver terdekat 3. {data_dari_gojek['driver_list'][3]['jarak']} meter ")
-print(f" driver terdekat 4. {data_dari_gojek['driver_list'][1]['jarak']} meter ")
+print(f"\n 1.{data_dari_gojek['driver_name'][0]} {data_dari_gojek['driver_list'][0]['jarak']} meter ")
+print(f"\n 2.{data_dari_gojek['driver_name'][1]} {data_dari_gojek['driver_list'][1]['jarak']} meter ")
+print(f"\n 3.{data_dari_gojek['driver_name'][2]} {data_dari_gojek['driver_list'][2]['jarak']} meter ")
+print(f"\n 4.{data_dari_gojek['driver_name'][3]} {data_dari_gojek['driver_list'][3]['jarak']} meter ")
+
 
 
